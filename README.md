@@ -4,7 +4,7 @@
 
 These are the instruction how to run the solution on your machine:
 
-Clone the repo to your  folder `git clone https://github.com/`
+Clone the repo to your  folder `git clone git@github.com:sargsyann/Simple-PHP-Application.git `
 
 This project was built in **PHP/MySQL**
 

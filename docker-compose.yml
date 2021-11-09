@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+
+  nginx:
+    build: nginx
+    ports:
+        - "8000:80"
+    links:
+        - web-1
+        - web-2
+
+  web-1:
+    build: .
+    container_name: web-1
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "8081:80"
+    stdin_open: true
+    tty: true
+
+  web-2:
+    build: .
+    container_name: web-2
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "8082:80"
+    stdin_open: true
+    tty: true
+
+  db:
+    image: mysql:latest
+    container_name: mysql-server
+    environment:
+      MYSQL_ROOT_PASSWORD: my_secret_pw_shh
+      MYSQL_DATABASE: devdb
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: devpass
+    ports:
+      - "3306:3306"

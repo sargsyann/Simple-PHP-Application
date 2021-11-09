@@ -12,7 +12,7 @@ Configure the **connection.php** file with yours DB info.
 
 Make sure to create an empty database as the app will create a table for you.
 
-## What was used
+## What was used 
 
 - PHP
 - MySQL

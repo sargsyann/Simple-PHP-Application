@@ -1,5 +1,5 @@
  <?php
-$servername = "mysql-server"; // Server name where the app has the DB
+$servername = "mysql"; // Server name where the app has the DB
 $username = "devuser"; // user of the DB 
 $password = "devpass"; // password of the DB
 $dbname = "devdb"; // DB name 

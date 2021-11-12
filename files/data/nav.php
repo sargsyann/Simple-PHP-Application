@@ -1,6 +1,6 @@
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">AJL</a>
+      <a id="logo-container" href="#" class="brand-logo">AJL (<?php echo $_SERVER["SERVER_ADDR"] ?>)</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.php" class="home_text">Home</a></li>
         <li><a href="index.php#about_scroll" class="about_text">About</a></li>
